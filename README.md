@@ -51,7 +51,7 @@ This section describes the architecture of the Encoder-Decoder Model. Both the e
 layer with 1024 units. The decoder contains four additional Dense layers for attention and output.
 <div align="center"><img src="/images/summary.png" height="600"></div>
 
-##Results
+## Results
 For a test run and to get an idea of how the model performs, the model is trained on 100 English-Hindi pairs for 100 epochs using the sparse_categorical_crossentropy
 loss function and TensorFlow’s AdamOptimizer(). It takes about 4-6 secs per epoch to train the network on a i5-8250U CPU. Even after training for such a short time on
 only 100 samples, some words were still correctly translated, for example, ‘welcome’ got translated to ‘स्वागत’, ‘legs’ got translated to ‘पैर’, ‘who knows’ got translated 
